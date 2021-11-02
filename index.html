@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/helpers.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bodyelement">
+
+    <div class="responsive">
+        <div class="flexEnd">
+            <div class="blueC slide">Back</div>
+        </div>
+
+
+        <div class="elements sectM">
+
+            <a class="flexBtw" href="./index.html">
+                <div class="flexAl blueC midFont midW"> Home</div>
+
+                <div class="flexAl"><img src="./images/right-arrow-32.png" alt=""></div>
+            </a>
+
+            <a class="flexBtw" href="./how-it-works.html">
+                <div class="flexAl blueC midFont midW"> How it works</div>
+
+                <div class="flexAl"><img src="./images/right-arrow-32.png" alt=""></div>
+            </a>
+
+            <a class="flexBtw" href="./faqs.html">
+                <div class="flexAl blueC midFont midW"> FAQS</div>
+
+                <div class="flexAl"><img src="./images/right-arrow-32.png" alt=""></div>
+            </a>
+
+
+            <a class="flexBtw" href="./login.html">
+                <div class="flexAl blueC midFont midW"> Account</div>
+
+                <div class="flexAl"><img src="./images/right-arrow-32.png" alt=""></div>
+            </a>
+
+            <a class="flexBtw" href="./contact.html">
+                <div class="flexAl blueC midFont midW"> Contact</div>
+
+                <div class="flexAl"><img src="./images/right-arrow-32.png" alt=""></div>
+            </a>
+
+
+        </div>
+    </div>
+
+    <nav class="flexBtw align">
+
+        <div class="flex logo">
+            <a href="./index.html" class="cursor flex">
+                <span class="Cart">Cart</span>
+                <span class="padi">Padi</span>    
+            </a>
+        </div>
+
+
+        <div class="els flexBtw">
+
+            <a href="./how-it-works.html">How it works</a>
+
+            <a href="./faqs.html">FAQs</a>
+
+            <a href="./login.html">Sign up/Login</a>
+
+            <a href="/contact.html">Contact</a>
+
+
+        </div>
+
+        <div class="ham">
+            <img src="./images/burger.png" alt="">
+        </div>
+
+    </nav>
+
+    <div class="navOffset align">
+
+
+        <div class="largeMg">
+
+            <h2 class="head itl">Header</h2>
+
+            <div class="contentBody">
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Hic corporis consequatur perferendis commodi. Sunt amet vero hic nostrum pariatur fuga incidunt 
+                voluptatem cum eveniet facere, consequatur molestias possimus eligendi excepturi.
+
+            </div>
+    
+    
+
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+
+<script src="./js/script.js"></script>
+
+<script>
+
+    let docs = document.querySelectorAll('.slide').forEach(e=> e.addEventListener('click',()=>{
+        let resp = document.querySelector('.responsive').classList.toggle('slide')
+    }) )
+
+</script>
+
+</html>

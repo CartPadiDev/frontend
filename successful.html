@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redirecting</title>
+    <link rel="stylesheet" href="./css/helpers.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+
+<body class=" ">
+    
+    <div class="fullW fullH relative">
+
+
+    <div class="responsive">
+        <div class="flexEnd">
+            <div class="blueC slide">Back</div>
+        </div>
+
+
+        <div class="elements sectM">
+
+            <a class="flexBtw" href="./index.html">
+                <div class="flexAl blueC midFont midW"> Home</div>
+
+                <div class="flexAl"><img src="./images/right-arrow-32.png" alt=""></div>
+            </a>
+
+            <a class="flexBtw" href="./how-it-works.html">
+                <div class="flexAl blueC midFont midW"> How it works</div>
+
+                <div class="flexAl"><img src="./images/right-arrow-32.png" alt=""></div>
+            </a>
+
+            <a class="flexBtw" href="./faqs.html">
+                <div class="flexAl blueC midFont midW"> FAQS</div>
+
+                <div class="flexAl"><img src="./images/right-arrow-32.png" alt=""></div>
+            </a>
+
+
+            <a class="flexBtw" href="./login.html">
+                <div class="flexAl blueC midFont midW"> Account</div>
+
+                <div class="flexAl"><img src="./images/right-arrow-32.png" alt=""></div>
+            </a>
+
+            <a class="flexBtw" href="./contact.html">
+                <div class="flexAl blueC midFont midW"> Contact</div>
+
+                <div class="flexAl"><img src="./images/right-arrow-32.png" alt=""></div>
+            </a>
+
+
+        </div>
+    </div>
+
+
+
+        <nav class="flexBtw align">
+
+            <div class="flex logo">
+                <span class="Cart">Cart</span>
+                <span class="padi">Padi</span>
+            </div>
+
+
+            <div class="els flexBtw">
+
+                <a href="./how-it-works.html">How it works</a>
+
+                <a href="./faqs.html">FAQs</a>
+
+                <a href="./login.html">Sign up/Login</a>
+
+                <a href="./contact.html">Contact</a>
+
+
+            </div>
+
+            <div class="ham">
+                <img src="./images/burger.png" class="slide" alt="">
+            </div>
+
+        </nav>
+
+
+        <div class="navOffset align imgEdge">
+
+            <div class="largeMg smalll grid2">
+
+                <div class="">
+
+
+                    <div class="deskCart analyze flexC">
+                        <img src="./images/3.png" class="cartt" alt="cart">
+                    </div>
+
+
+                </div>
+                    
+                
+                <div class="head init smallMobile">
+                    <h2 class="head large init centerMobile">Dear Temi</h2>
+                    <div class="midW  init smallM mgMobile">
+                        Your information was successfully processed
+                    </div>
+                    <div class="smallM">
+                        You are eligible for Cartpadi monthly payment under the following terms:
+                    </div>
+
+                    <div class="nestM  midFont init ">
+                        <div class="tablehead">
+                            <div>Upfront payment</div>
+                            <div class="flexEnd">$346</div>
+                        </div>
+
+                        <div class="tablehead">
+                            <div>Interest reate(per month)</div>
+                            <div class="flexEnd">0.00%</div>
+                        </div>
+
+                        <div class="tablehead">
+                            <div>Loan amount</div>
+                            <div class="flexEnd">$692</div>
+                        </div>
+
+
+                        <div class="tablehead">
+                            <div>Duration</div>
+                            <div class="flexEnd">3 months</div>
+                        </div>
+
+
+                        <div class="tablehead">
+                            <div>Monthly Repayment</div>
+                            <div class="flexEnd">30th of every month</div>
+                        </div>
+
+
+                        <div class="tablehead">
+                            <div>Account to be debited</div>
+                            <div class="flexEnd">0130057487</div>
+                        </div>
+
+                        <div class="tablehead">
+                            <div>Bank</div>
+                            <div class="flexEnd">GTbank</div>
+                        </div>
+
+                        <div>Please note that upfront payment would be deducted now.</div>
+                    </div>
+                    
+                    <div class="section midFont">
+                        <div>Kindly enter the OTP sent to your mobile number or your email address</div>
+                        <div class="otpBox">
+                            <input type="text">
+                        </div>
+                        <div class="nestM subM smallflex">
+                            <div> <input type="checkbox" class="dull checkbox" > </div>
+                            <div> 
+                                <div class="flexAl" style="height:30px">I hereby accept the Terms and Conditions herein stated</div> 
+                                <div class="nestM">
+                                    <button class="submitBtn dull"  disabled>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        
+
+            </div>
+
+
+
+
+        </div>
+
+        <!-- -->
+    </div>
+
+</body>
+
+<script>
+
+    let docs = document.querySelectorAll('.slide').forEach(e=> e.addEventListener('click',
+        ()=>{
+            let resp = document.querySelector('.responsive').classList.toggle('slide')
+        }) 
+    )
+
+    document.querySelector('.checkbox').addEventListener('click',()=>{
+        let btn = document.querySelector('.submitBtn');
+        btn.toggleAttribute('disabled');
+        btn.classList.toggle('active')
+    })
+</script>
+
+
+</html>

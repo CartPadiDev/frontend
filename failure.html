@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartpadi-failure</title>
+    <link rel="stylesheet" href="./css/helpers.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+
+<body class=" ">
+    
+    <div class="fullW fullH relative">
+
+        <nav class="flexBtw align">
+
+            <div class="flex logo">
+                <a href="./index.html" class="cursor flex">
+                    <span class="Cart">Cart</span>
+                    <span class="padi">Padi</span>    
+                </a>
+            </div>
+    
+
+            <div class="els flexBtw">
+
+                <a href="./how-it-works.html">How it works</a>
+
+                <a href="./faqs.html">FAQs</a>
+
+                <a href="./login.html">Sign up/Login</a>
+
+                <a href="./contact.html">Contact</a>
+
+
+            </div>
+
+            <div class="ham">
+                <img src="./images/burger.png" alt="">
+            </div>
+
+        </nav>
+
+
+        <div class="navOffset align imgEdge">
+
+            <div class="largeMg smalll grid2">
+
+                <div class="">
+
+
+                    <div class="deskCart analyze flexC">
+                        <img src="./images/4.png" class="cartt fail" alt="cart">
+                    </div>
+
+
+                </div>
+                    
+                
+                <div class="head init smallMobile">
+                    <h2 class="head large init centerMobile">Dear Temi</h2>
+                    <div class="midW  init smallM mgMobile">
+                        Your information was successfully processed
+                    </div>
+                    <div class="smallM">
+                        However you are not currently eligible for a CartPadi loan.
+                    </div>
+
+                    <div class="sectM">
+                        You can login to check your profile, limit or change some information on your application.
+                    </div>
+
+                    <div class="sectM">
+                        <div>
+                            <div>
+                                Want to change some information?</div>
+                            </div>
+                        <div class="smallM">
+                            <button class="subBtn" disabled>
+                                Back to application page
+                            </button>
+                        </div>
+
+                    </div>
+                    
+                </div>
+        
+
+            </div>
+
+            
+
+        </div>
+
+        <!-- -->
+    </div>
+
+</body>
+
+
+<script>
+
+    setTimeout(() => {
+        let button = document.querySelector('.subBtn')
+        
+        button.toggleAttribute('disabled');
+        button.classList.toggle('active');
+    }, 2000);
+
+</script>
+
+
+</html>
