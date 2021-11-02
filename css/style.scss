@@ -523,6 +523,23 @@ h1,h2,h3{
 
             width: 450px;
         }
+        &.failure{
+            @media(max-width:700px){
+                display: flex;
+                justify-content: center;
+                img{
+                    max-width:250px
+                }
+            }
+        }
+    
+    }
+
+}
+
+.failurehead{
+    @media(min-width:700px){
+        margin-top: -2em;
     }
 }
 

@@ -37,7 +37,7 @@
 
 
         <div class="ham">
-            <img src="./images/burger.png" alt="">
+            <img src="./images/burger.png" class="slide" alt="">
         </div>
 
     </nav>
@@ -90,4 +90,14 @@
 </body>
 
 <script src="./js/script.js"></script>
+
+<script>
+
+    let docs = document.querySelectorAll('.slide').forEach(e=> e.addEventListener('click',()=>{
+        let resp = document.querySelector('.responsive').classList.toggle('slide')
+    }) )
+
+</script>
+
+
 </html>

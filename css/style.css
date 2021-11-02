@@ -495,6 +495,26 @@ h1, h2, h3 {
 }
 
 @media (max-width: 700px) {
+  .deskCart.analyze.failure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .deskCart.analyze.failure img {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 700px) {
+  .failurehead {
+    margin-top: -2em;
+  }
+}
+
+@media (max-width: 700px) {
   .centerMobile {
     text-align: center;
   }
