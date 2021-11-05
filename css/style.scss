@@ -10,7 +10,7 @@
 
 
 
-body{
+html,body{
     margin:0;
     padding:0;
     width:100%;
@@ -154,7 +154,9 @@ nav{
             min-width: 55%;            
         }
 
-
+        @media(min-width: 1400px){
+            min-width: 650px;            
+        }
 
 
 
@@ -168,7 +170,7 @@ nav{
 
 .responsive{
     position: fixed;
-    left: -1800px;
+    left: -3000px;
     top:0;
     width:100%;
     padding: 2em;
